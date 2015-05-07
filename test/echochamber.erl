@@ -14,4 +14,5 @@ fnl([]) ->
     ok.
 
 main(Args) ->
+    io:setopts([{encoding, unicode}]),
     format_list(Args).
